@@ -1,0 +1,7 @@
+/* Keep the page's viewport sizing authoritative. The runtime may pin an inline
+   pixel size when the CSS dimensions equal its backing-store dimensions at 1x.
+   It still owns the backing store, logical fit, letterboxing, and pixel ratio. */
+#stage {
+  width: 100vw !important;
+  height: 100vh !important;
+}
